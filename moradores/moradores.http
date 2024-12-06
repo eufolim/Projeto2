@@ -1,0 +1,6 @@
+@moradores_HostAddress = http://localhost:5172
+
+GET {{moradores_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
