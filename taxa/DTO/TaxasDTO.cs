@@ -1,6 +1,6 @@
-namespace taxa.DTO.TaxaDTO
+namespace taxa.DTO
 {
-    public class taxaDTO
+    public class TaxasDTO
     {
         public int Id { get; set; }
         public int Valor { get; set; }

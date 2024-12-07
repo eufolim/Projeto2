@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Caching.Memory;
 
-namespace residencias.Infra
+namespace taxa.Infra 
 {
     public static class GeradorDeServicos
     {

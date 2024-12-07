@@ -1,9 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using residencias.DTO;
-using residencias.DTO.ResidenciaDTO;
 using residencias.Services;
 
-namespace Residencias.Controllers
+namespace residencias.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -19,36 +18,28 @@ namespace Residencias.Controllers
         {
             try
             {
-                var residencia = new Residencia(){
-                    Metragen = cadastraResidenciaDto.Metragen,
-                    Morador = cadastraResidenciaDto.Morador,
-                    Valor = cadastraResidenciaDto.Valor,
-                    Numero = cadastraResidenciaDto.Numero
-                };
+                _servResidencia.Inserir(cadastraResidenciaDto);
 
-                _servResidencia.Inserir(residencia);
-
-                var retornoInsercao = new { CodigoResidencia = residencia.Id };
-
-                return Ok(retornoInsercao);
+                return Ok("Ok");
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                return BadRequest(e.Message);
+                return BadRequest(ex.Message);
             }
         }
         [Route("/api/[Controller]/{id}")]
         [HttpPut]
-        public IActionResult Editar(int id, ResidenciaDTO editarResidenciaDto)
+        public IActionResult Editar(int id, ResidenciaView editarResidenciaDto)
         {
             try
             {
                 var residencia = _servResidencia.BuscarResidencia(id);
 
                 residencia.Metragen = editarResidenciaDto.Metragen;
-                residencia.Morador = editarResidenciaDto.Morador;
+                residencia.CodMorador = editarResidenciaDto.CodMorador;
                 residencia.Valor = editarResidenciaDto.Valor;
                 residencia.Numero = editarResidenciaDto.Numero;
+                residencia.Ativa = editarResidenciaDto.Ativa;
 
                 _servResidencia.Editar(residencia);
 

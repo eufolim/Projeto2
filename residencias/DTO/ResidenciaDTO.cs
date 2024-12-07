@@ -1,11 +1,12 @@
-namespace residencias.DTO.ResidenciaDTO
+using residencia.DTO;
+
+namespace residencias.DTO
 {
     public class ResidenciaDTO
     {
-        public int Id { get; set; }
         public int Metragen { get; set; }
         public int Valor { get; set; }
         public int Numero { get; set; }
-        public int Morador { get; set; }
+        public int CodMorador { get; set; }
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("residencias")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8994b75d9fb3a724402d50315f11b3aea411615a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b923e9c589ab7a8a71da2e7de3c705d2b22ab70")]
 [assembly: System.Reflection.AssemblyProductAttribute("residencias")]
 [assembly: System.Reflection.AssemblyTitleAttribute("residencias")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

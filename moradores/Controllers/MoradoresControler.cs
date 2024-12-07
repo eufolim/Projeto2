@@ -21,7 +21,6 @@ namespace moradores.Controllers
                 var morador = new Morador(){
                     Nome = cadastraMoradorDto.Nome,
                     CPF = cadastraMoradorDto.CPF,
-                    Residencia = cadastraMoradorDto.Residencia
                 };
 
                 _servMorador.Inserir(morador);
@@ -45,7 +44,6 @@ namespace moradores.Controllers
 
                 morador.Nome = editarMoradorDto.Nome;
                 morador.CPF = editarMoradorDto.CPF;
-                morador.Residencia = editarMoradorDto.Residencia;
                 morador.Divida =  editarMoradorDto.Divida;
           
                 _servMorador.Editar(morador);
