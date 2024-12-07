@@ -60,3 +60,4 @@ Integrações Entre os Microsserviços:
 
  Alteração de Dados:
    - Ao cadastrar uma taxa de condomínio, o valor correspondente será adicionado ao saldo de dívida do morador associado (integração entre Microsserviço de Taxa de Condomínio e Microsserviço de Moradores).
+
