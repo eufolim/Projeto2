@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("moradores")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8994b75d9fb3a724402d50315f11b3aea411615a")]
 [assembly: System.Reflection.AssemblyProductAttribute("moradores")]
 [assembly: System.Reflection.AssemblyTitleAttribute("moradores")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

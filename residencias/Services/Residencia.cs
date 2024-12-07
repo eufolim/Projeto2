@@ -1,6 +1,6 @@
-namespace residencias.DTO.ResidenciaDTO
+namespace residencias.Services
 {
-    public class ResidenciaDTO
+    public class Residencia 
     {
         public int Id { get; set; }
         public int Metragen { get; set; }

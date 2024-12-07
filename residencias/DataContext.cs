@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using moradores.Services;
+using residencias.Services;
 
-namespace moradores
+namespace residencias
 {
     public class DataContext : DbContext 
     {
@@ -10,12 +10,12 @@ namespace moradores
 
         }
 
-        public DbSet<Morador> Moradores { get; set; }
+        public DbSet<Residencia> Residencias { get; set; }
         
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Morador>().HasKey(p => p.Id);
+            modelBuilder.Entity<Residencia>().HasKey(p => p.Id);
             
 
             base.OnModelCreating(modelBuilder);
