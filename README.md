@@ -1,9 +1,11 @@
 Integração - Documento de Requisitos
 
 1. Propósito do Sistema
+
 O objetivo do sistema é gerenciar condomínios de forma eficiente, permitindo o controle centralizado de informações relacionadas às residências, moradores e taxas de condomínio. O sistema será desenvolvido com arquitetura de microsserviços para garantir modularidade e escalabilidade. Ele permitirá o cadastro e consulta de informações essenciais e manterá as interações entre os microsserviços para sincronizar dados em tempo real.
 
 2. Quais são os Usuários?
+
 O sistema atenderá aos seguintes tipos de usuários:
 
   Administradores do Condomínio:
